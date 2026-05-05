@@ -34,6 +34,6 @@ Unlike high-level tools, this program works close to the system layer, exposing 
 5)  Retrieves process name using GetModuleBaseName
 6)  Enumerates clipboard formats
 7)  Attempts to read:
-  - CF_UNICODETEXT
-  - Fallback to CF_TEXT
+    - CF_UNICODETEXT
+    - Fallback to CF_TEXT
 8)  Prints extracted data
