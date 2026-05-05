@@ -27,13 +27,13 @@ Unlike high-level tools, this program works close to the system layer, exposing 
 
 ### How It Works
 
-1. Opens the clipboard using OpenClipboard
-2. Gets the current owner window via GetClipboardOwner
-3. Resolves process ID with GetWindowThreadProcessId
-4. Opens the process with OpenProcess
-5. Retrieves process name using GetModuleBaseName
-6. Enumerates clipboard formats
-7. Attempts to read:
+1  Opens the clipboard using OpenClipboard
+2  Gets the current owner window via GetClipboardOwner
+3  Resolves process ID with GetWindowThreadProcessId
+4  Opens the process with OpenProcess
+5  Retrieves process name using GetModuleBaseName
+6  Enumerates clipboard formats
+7  Attempts to read:
   - CF_UNICODETEXT
   - Fallback to CF_TEXT
-8. Prints extracted data
+8  Prints extracted data
